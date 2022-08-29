@@ -24,7 +24,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   Map<String, String> projects = {
-    'Kalonga \nPress To Preview': 'https://kalonga.oubeid.com/',
+    'Kalonga \n Press To Preview': 'https://kalonga.oubeid.com/',
     'Speedy \nPress To Preview': 'https://speedy.oubeid.com/',
     'BMI Calculator \nPress To Preview':
         'https://github.com/Zouuabi/Basic-BMI-calculator-app',
