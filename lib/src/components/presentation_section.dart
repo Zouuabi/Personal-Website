@@ -85,6 +85,7 @@ class PresentationSection extends StatelessWidget {
                     Text(
                       kMyName,
                       style: TextStyle(
+                        color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: screenWidth < 600
                             ? screenWidth * 0.06
@@ -99,12 +100,12 @@ class PresentationSection extends StatelessWidget {
                           fontSize: screenWidth < 600
                               ? screenWidth * 0.04
                               : screenWidth * 0.02,
-                          color: Colors.white70),
+                          color: const Color.fromARGB(255, 255, 255, 255)),
                     ),
                     Text(
                       kPresentationParagraph,
                       style: TextStyle(
-                          color: Colors.white60,
+                          color: const Color.fromARGB(227, 255, 255, 255),
                           fontSize: screenWidth < 600
                               ? screenWidth * 0.04
                               : screenWidth * 0.017),

@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/link.dart';
@@ -20,10 +22,11 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-
-
 class _HomePageState extends State<HomePage> {
   Map<String, String> projects = {
+    'Chess \n Press To Preview': 'https://chessproject.web.app/',
+    'Social Media App \n Press To Preview':
+        'https://socialmediaapp-5be9c.web.app/',
     'Kalonga \n Press To Preview': 'https://kalonga.oubeid.com/',
     'Speedy \nPress To Preview': 'https://speedy.oubeid.com/',
     'BMI Calculator \nPress To Preview':
@@ -53,7 +56,8 @@ class _HomePageState extends State<HomePage> {
                     child: Text(
                   key,
                   textAlign: TextAlign.center,
-                  style: const TextStyle(fontSize: 30, fontFamily: 'Perma'),
+                  style: const TextStyle(
+                      color: Colors.white, fontSize: 30, fontFamily: 'Perma'),
                 )),
               )))));
     });
@@ -75,7 +79,16 @@ class _HomePageState extends State<HomePage> {
         body: SafeArea(
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.04),
-        color: kWSBackgroundColor,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              Color.fromARGB(255, 32, 89, 106),
+              Color.fromARGB(255, 65, 118, 114),
+            ],
+          ),
+        ),
         width: double.infinity,
         height: double.infinity,
 
