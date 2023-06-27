@@ -88,28 +88,31 @@ class PresentationSection extends StatelessWidget {
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: screenWidth < 600
-                            ? screenWidth * 0.06
-                            : screenWidth * 0.04,
+                            ? screenWidth * 0.04
+                            : screenWidth * 0.02,
                       ),
                     ),
-                    Text(
-                      kSmallPred,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: screenWidth < 600
-                              ? screenWidth * 0.04
-                              : screenWidth * 0.02,
-                          color: const Color.fromARGB(255, 255, 255, 255)),
-                    ),
+                    // Text(
+                    //   kSmallPred,
+                    //   textAlign: TextAlign.center,
+                    //   style: TextStyle(
+                    //       fontWeight: FontWeight.bold,
+                    //       fontSize: screenWidth < 600
+                    //           ? screenWidth * 0.04
+                    //           : screenWidth * 0.02,
+                    //       color: const Color.fromARGB(255, 255, 255, 255)),
+                    // ),
                     Text(
                       kPresentationParagraph,
                       style: TextStyle(
                           color: const Color.fromARGB(227, 255, 255, 255),
                           fontSize: screenWidth < 600
-                              ? screenWidth * 0.04
+                              ? screenWidth * 0.05
                               : screenWidth * 0.017),
                     ),
+                    const SizedBox(
+                      height: 20,
+                    )
                     // OutlinedButton(
                     //     onPressed: null,
                     //     child: Text(

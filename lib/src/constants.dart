@@ -18,10 +18,10 @@ const kSecondaryTextStyle = TextStyle(fontSize: 15, color: Colors.white70);
 
 const String kGgreeting = 'Website Is Under Maintenance';
 // const String kGgreeting = 'Hi There I\'m';
-const String kMyName = 'Oubeid Zouabi.';
-const String kSmallPred = 'I build beautifuly Simple things .';
+const String kMyName = 'Oubeid Zouabi';
+const String kSmallPred = " ";
 const String kPresentationParagraph =
-    'I\'m a Computer Science Student and Flutter Developer . Currently, I\'m focused on building solutions for my daily problems and making alternatives for some productivity apps that I\'m intrested in. ';
+    'Software Developer from Tunsia , with solid experience in building full stack mobile applicatons ';
 
 const BoxDecoration neumorphicDecoration = BoxDecoration(
   gradient: LinearGradient(
